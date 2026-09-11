@@ -502,7 +502,6 @@ dialog.sheet.closing{animation:sheetOut .28s var(--ease) forwards}
 .around ul{list-style:none;margin:0;padding:0}
 .around li{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) translate(calc(cos(var(--a))*var(--rx)),calc(sin(var(--a))*var(--ry)));font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--hair);border-radius:100px;padding:10px 18px;background:rgba(252,250,245,.86);box-shadow:var(--shadow-1);white-space:nowrap}
 .around li .tm{font-size:.5em}
-.around .you .chg{position:absolute;left:-14px;top:-10px;margin:0}
 .around-note{margin:26px auto 0;max-width:52ch;text-align:center;font-family:var(--display);font-weight:500;font-size:clamp(19px,2vw,24px);line-height:1.4;color:var(--ink)}
 @media (max-width:700px){
   .around{height:auto;display:flex;flex-direction:column;align-items:center;gap:18px}
@@ -1159,42 +1158,6 @@ dialog.sheet[open]{animation:sheetIn .5s var(--ease)}
 .urgent-rows a{background:#FBF4EC;flex-wrap:wrap}
 .urgent-rows .num{font-family:var(--display);font-size:22px;font-weight:600;color:var(--danger);letter-spacing:0;flex:none}
 
-/* ===== REVIEW LAYER: remove this block and every <mark class="chg"> to clear ===== */
-.chg{display:none}
-body.notes-on .chg{display:inline-flex}
-.chg{align-items:center;font:600 10.5px/1 var(--mono);letter-spacing:.08em;
-  color:#fff;background:#1E5EFF;border-radius:6px;padding:4px 7px;vertical-align:middle;
-  margin-right:8px;box-shadow:0 2px 8px rgba(30,94,255,.35);position:relative;z-index:5;
-  cursor:help;white-space:nowrap;text-transform:none;font-style:normal;opacity:1!important;
-  transform:none!important;filter:none!important;text-shadow:none;
-}
-.chg.dec{background:#C2410C;box-shadow:0 2px 8px rgba(194,65,12,.35)}
-.chg.blk{background:#6B7280;box-shadow:0 2px 8px rgba(107,114,128,.35)}
-.lockup .chg,.ask-cycle .chg{opacity:1!important}
-.chg-legend{
-  position:fixed;left:16px;bottom:16px;z-index:60;width:min(360px,calc(100vw - 32px));
-  max-height:min(62vh,560px);overflow:auto;background:#fff;color:#111;border-radius:14px;
-  box-shadow:0 18px 50px rgba(0,0,0,.28);font:13px/1.45 var(--sans);border:1px solid rgba(0,0,0,.08);
-}
-.chg-legend summary{cursor:pointer;padding:12px 14px;font-weight:700;background:#1E5EFF;color:#fff;border-radius:14px;list-style:none}
-.chg-legend[open] summary{border-radius:14px 14px 0 0}
-.chg-legend summary::-webkit-details-marker{display:none}
-.chg-legend ol{list-style:none;padding:10px 14px 12px}
-.chg-legend li{display:grid;grid-template-columns:44px 1fr;gap:8px;padding:6px 0;border-top:1px solid rgba(0,0,0,.06);align-items:start}
-.chg-legend li:first-child{border-top:0}
-.chg-legend .k{font:600 10.5px/1.2 var(--mono);color:#fff;background:#1E5EFF;border-radius:5px;padding:4px 6px;text-align:center;margin-top:2px}
-.chg-legend .k.dec{background:#C2410C}
-.chg-legend .k.blk{background:#6B7280}
-.chg-legend .k.done{background:#15803D}
-.chg-legend .note{color:#374151}
-.chg-legend .note b{color:#111}
-.chg-legend a{color:#1E5EFF}
-.notes-toggle{
-  margin:10px 14px 0;width:calc(100% - 28px);padding:9px 12px;border-radius:9px;border:0;
-  background:#111;color:#fff;font:600 12.5px var(--sans);cursor:pointer;
-}
-body:not(.notes-on) .notes-toggle{background:#1E5EFF}
-@media (max-width:700px){.chg-legend{max-height:40vh}}
 </style>
 </head>
 <body>
@@ -1206,7 +1169,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
 
 <header class="site-head" id="head">
   <div class="head-in">
-    <a class="brand" href="#top"><mark class="chg dec" title="To confirm: one organisational name from header to footer. The header said Healthcare SMC India and the footer said HealthcareSMC-Geneura LLP. Now HealthcareSMC-Geneura LLP everywhere the organisation is named.">M3</mark><span><b>Lythous<span class="tm">&trade;</span></b><i>HealthcareSMC-Geneura LLP</i></span></a>
+    <a class="brand" href="#top"><span><b>Lythous<span class="tm">&trade;</span></b><i>HealthcareSMC-Geneura LLP</i></span></a>
     <nav class="site-nav" aria-label="Sections">      <a href="#arrive">How you got here</a>
       <a href="#hello">Say hello</a>
       <a href="#inside">Inside</a>
@@ -1226,8 +1189,8 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
   <section class="hero" id="top" style="padding:0">
     <div class="hero-media"><img src="/assets/room-wide.jpg" alt="A Lythous&trade; room: daylight, a sunrise mural, low seating in a circle."></div>
     <div class="hero-in">
-      <span class="welcome-big"><mark class="chg" title="THE KEY (See the whole human. Build around the human. Become.) is not on this page. It is the spine of the new institutional page, linked at the bottom and in the footer. This page has one job: the first hello.">J1</mark>Welcome to Lythous<span class="tm">&trade;</span></span>
-      <h1><span class="line"><span><mark class="chg dec" title="To confirm: the opening line. The 2 September call agreed We begin by seeing you, and that is kept. The email quotes We begin with the person you are. ENTER / THE ANSWER BEGINS WITH YOU is not on the page, since it is not yet final.">N1</mark>We begin</span></span><span class="line"><span>by seeing you.</span></span></h1>
+      <span class="welcome-big">Welcome to Lythous<span class="tm">&trade;</span></span>
+      <h1><span class="line"><span>We begin</span></span><span class="line"><span>by seeing you.</span></span></h1>
       <p class="lede">You do not need to identify or choose a service, or know which
         professional you need.<br>
         We start with your life, your circumstances, your interests, and who you want
@@ -1274,7 +1237,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
         </button>
         <button class="c-card" type="button" data-open="poster" aria-pressed="false">          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="1.2"/><path d="M8.5 8h7M8.5 11.5h7M8.5 15h4"/></svg></span>
           <b>A poster or a QR code</b>
-          <span><mark class="chg dec" title="Former name removed here and from the popup, so it appears once, in the footer. To confirm: this is the card a QR-code arrival taps, so the popup still says older material carries our former name, without spelling it.">M2</mark>Whichever poster or code brought you here, you are in the right place.</span>
+          <span>Whichever poster or code brought you here, you are in the right place.</span>
           <span class="link">How that works</span>
         </button>
         <button class="c-card" type="button" data-open="community" aria-pressed="false">
@@ -1332,7 +1295,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
   <section id="hello">
     <div class="wrap">
       <div class="sec-head rv">
-        <span class="eyebrow"><mark class="chg blk" title="Before launch: who answers +91 96346 76724 on WhatsApp, call and text, what hours they cover, and confirmation it is the right number for a student in distress.">O4</mark>Say hello</span>
+        <span class="eyebrow">Say hello</span>
         <h2>Saying hello is the first step.</h2>
         <p class="lede">Whichever way suits you today.</p>
       </div>
@@ -1400,7 +1363,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
           <b>The community</b>
         </div>
       </div>
-      <p class="who-close rv"><mark class="chg" title="Jay call, 8 September. Was: Anyone can walk in.">W1</mark><b>Anyone</b> can benefit from being seen. <b>Everyone</b> matters.</p>
+      <p class="who-close rv"><b>Anyone</b> can benefit from being seen. <b>Everyone</b> matters.</p>
     </div>
   </section>
 
@@ -1414,14 +1377,14 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
     <div class="wrap">
       <div class="sec-head rv">
         <span class="eyebrow">Inside our Lythous<span class="tm">&trade;</span> node</span>
-        <h2><mark class="chg" title="Jay call, 8 September. Was: Come and pay us a visit.">W2</mark>Come in and start your journey.</h2>
+        <h2>Come in and start your journey.</h2>
       </div>
       <div class="where-card rv">
         <span class="pin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.5s7-6.1 7-11.1a7 7 0 1 0-14 0c0 5 7 11.1 7 11.1z"/><circle cx="12" cy="10.2" r="2.7"/></svg></span>
         <div>
           <p class="where-name">Major Ram Veer Singh Shiksha Sansthan</p>
           <p class="where-place">Shikohabad &middot; Firozabad &middot; Uttar Pradesh</p>
-          <p class="where-caveat"><mark class="chg blk" title="Waiting on the campus: the exact building, how to get there, and opening hours. This line is replaced the moment they arrive.">O2</mark>The exact building and the opening hours are confirmed
+          <p class="where-caveat">The exact building and the opening hours are confirmed
             with your campus when it opens, and posted here and at the door.</p>
         </div>
       </div>
@@ -1436,7 +1399,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
         <span class="headshot" aria-hidden="true">RB</span>
         <div class="d-who">
           <p class="d-name">Director Ram Bresh Bhadauriya (Yadav)</p>
-          <p class="d-role"><mark class="chg blk" title="Waiting on Chris: Director Ram's photo, a short welcome to students in his own words, and which title: Founding Lythous Partner or Founding University Partner.">O1</mark>Founding Lythous<span class="tm">&trade;</span> Partner &middot; Major Ram Veer Singh Shiksha Sansthan</p>
+          <p class="d-role">Founding Lythous<span class="tm">&trade;</span> Partner &middot; Major Ram Veer Singh Shiksha Sansthan</p>
         </div>
         <p class="d-quote">A short message from Director Ram to his students will appear
           here, in his own words.</p>
@@ -1489,7 +1452,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
               person, not a form.</p></div></li>
           <li><span class="num">02</span>
             <div><b>Engagement</b>
-            <p><mark class="chg" title="Jay call, 8 September. An Ambassador can be the one you talk to, not only a Listener. Was: You talk to a Listener, on your terms.">W3</mark>You talk to a Listener<span class="tm">&trade;</span> and/or Ambassador<span class="tm">&trade;</span>, on your terms. In
+            <p>You talk to a Listener<span class="tm">&trade;</span> and/or Ambassador<span class="tm">&trade;</span>, on your terms. In
               the room, or by phone, text or WhatsApp.</p></div></li>
           <li><span class="num">03</span>
             <div><b>Navigation</b>
@@ -1497,12 +1460,12 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
               resource to help you.</p></div></li>
           <li><span class="num">04</span>
             <div><b>Escalation</b>
-            <p><mark class="chg" title="Widened beyond the clinical ladder from the 5 September email, then shortened on the 8 September call: a community resource, not a wellness or community resource. Was: an Ambassador, a clinician, a psychologist or a psychiatrist.">K3 W4</mark>If necessary, you are connected with the right person or resource. It
+            <p>If necessary, you are connected with the right person or resource. It
               could be an Ambassador, a clinician, a physician, a psychologist, a
               psychiatrist, or a community resource.</p></div></li>
           <li><span class="num">05</span>
             <div><b>Follow-through</b>
-            <p><mark class="chg" title="Jay call, 8 September. Was: We don't just show you the next door. We stay with you until you get through it.">W5</mark>This is a shared path and a shared journey that help you
+            <p>This is a shared path and a shared journey that help you
               become&hellip;</p></div></li>
         </ol>
         <figure class="how-stage rv" aria-hidden="true">
@@ -1535,10 +1498,10 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
         </div>
         <div class="rv">
           <p class="fourwords" style="margin-bottom:clamp(22px,2.6vw,34px)">
-            <span><mark class="chg" title="Jay call, 8 September, his own words. Was: We do not fit you around the services available. We build the right people and resources around you.">K4 W6</mark>We don&rsquo;t give you what we have. We give you what you need.</span>
+            <span>We don&rsquo;t give you what we have. We give you what you need.</span>
             <span>Because there is no standard you and there should be no standard
               path.</span></p>
-          <p class="understand-note"><mark class="chg dec" title="Whole person, not only mind and health. Five added: Sleep, Nutrition, Movement, Community, Potential. To confirm: genetics and biometrics from the email are not shown on this student page.">K2</mark>Your life is integrated, not separated into
+          <p class="understand-note">Your life is integrated, not separated into
             pieces. So the help you get should be the same.</p>
           <ul class="chips rv">
             <li style="--x:2%;--y:10%;--dur:16s;--delay:0s;--dx:7px;--dy:-11px"><svg class="dim-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.3s-7.2-4.4-7.2-9.4a4 4 0 0 1 7.2-2.4 4 4 0 0 1 7.2 2.4c0 5-7.2 9.4-7.2 9.4z"/></svg><b>Health</b></li>
@@ -1589,7 +1552,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
       </div>
       <div class="around rv" role="img" aria-label="You in the centre, with a Listener, an Ambassador, a Clinician, a Physician, a Psychologist, a Psychiatrist, and wellness and community resources forming around you">
         <img class="fire" src="/assets/art-circle.webp" alt="" aria-hidden="true">
-        <span class="you"><mark class="chg" title="The campfire circle moved from the corner of this section to sit behind You, since it is a circle of people around one light.">V1</mark>You</span>
+        <span class="you">You</span>
         <ul aria-hidden="true">
           <li style="--a:-90deg">Listener<span class="tm">&trade;</span></li>
           <li style="--a:-38.6deg">Ambassador<span class="tm">&trade;</span></li>
@@ -1600,7 +1563,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
           <li style="--a:218.6deg">Wellness and community resources</li>
         </ul>
       </div>
-      <p class="around-note rv"><mark class="chg" title="The visible pathway was a line: Listener, Ambassador, Clinician, Psychologist, Psychiatrist. Now the person is in the centre and the people, services and resources form around them. The supporting message is from the email. Replaces: A listener is the front door, an ambassador is the navigator, clinicians are the resources called upon.">K1</mark>The network does not move you through a predetermined sequence. The right
+      <p class="around-note rv">The network does not move you through a predetermined sequence. The right
         people, services and resources form around you.</p>
     </div>
   </section>
@@ -1679,7 +1642,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
   <section class="sec-tint signpost" id="institutions">
     <div class="wrap">
       <div class="sec-head rv" style="margin-bottom:18px">
-        <span class="eyebrow"><mark class="chg" title="A signpost, not a section. The institutional story (universities, employers, healthcare organisations, communities, THE KEY, Human Infrastructure) lives on its own page, built in the same style.">L1</mark>For institutions</span>
+        <span class="eyebrow">For institutions</span>
       </div>
       <a class="signpost-in rv" href="/institutions/">
         <span><b>Are you a university, an employer, a healthcare organisation or a community?</b>
@@ -1775,9 +1738,9 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
         <i>HealthcareSMC-Geneura LLP</i>
         <p>A room on your campus, and people in it, for anyone who wants to make
           contact.</p>
-        <p class="lic"><mark class="chg dec" title="Footer lockup exactly as written in the 5 September email: Delivered in India by HealthcareSMC-Geneura LLP under license from Geneura AI(TM), Inc. To confirm: license (US) rather than licence, which the rest of the page uses.">M4</mark>Delivered in India by HealthcareSMC-Geneura LLP under license from
+        <p class="lic">Delivered in India by HealthcareSMC-Geneura LLP under license from
           Geneura AI<span class="tm">&trade;</span>, Inc.</p>
-        <p class="lic"><mark class="chg" title="Formerly, not formally. The line now reads exactly: Formerly known as Lighthouse in India.">M1</mark> <mark class="chg" title="The former name is referenced once, here, discreetly in the footer.">M2</mark>Formerly known as Lighthouse in India.</p>
+        <p class="lic">Formerly known as Lighthouse in India.</p>
       </div>
       <div><h4>Ways in</h4><ul>
         <li><a href="https://wa.me/919634676724?text=Hello">WhatsApp us</a></li>
@@ -2024,7 +1987,7 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
   <div class="sheet-in">
     <button class="sheet-x" type="button" data-close aria-label="Close">&times;</button>
     <h3 id="pos-title">A poster or a QR code</h3>
-    <p><mark class="chg dec" title="Former name no longer spelled out here. It appears once, in the footer.">M2</mark>If you arrived here from a poster, a billboard or a QR code, you are in the right
+    <p>If you arrived here from a poster, a billboard or a QR code, you are in the right
       place. Some of the older material carries our former name. Lythous<span class="tm">&trade;</span>
       is the current name, and the people are the same.</p>
     <div class="sheet-cta">
@@ -2042,45 +2005,6 @@ body:not(.notes-on) .notes-toggle{background:#1E5EFF}
   </div>
 </dialog>
 
-
-<details class="chg-legend">
-  <summary>For review by Geneura team &middot; hover any badge</summary>
-  <ol>
-    <li><span class="k">J1</span><span class="note"><b>THE KEY&trade;</b> is not on this page. It is the spine of the new institutional page, in the same style. This page keeps one job: the first hello.</span></li>
-    <li><span class="k dec">N1</span><span class="note"><b>To confirm, the opening line.</b> Kept as agreed on the 2 Sept call: We begin by seeing you. ENTER / THE ANSWER BEGINS WITH YOU is not on the page, since it is not yet final.</span></li>
-    <li><span class="k">K1</span><span class="note"><b>The network forms around you.</b> You in the centre; Listener, Ambassador, Clinician, Physician, Psychologist, Psychiatrist, and wellness and community resources around you. Replaces the front door / navigator / resources line.</span></li>
-    <li><span class="k dec">K2</span><span class="note"><b>Whole person.</b> Sleep, Nutrition, Movement, Community and Potential added, and the pieces now start apart and come together as one, on a loop. To confirm: genetics and biometrics are not shown on this student page.</span></li>
-    <li><span class="k">K3</span><span class="note"><b>Escalation</b> widened beyond the clinical ladder, ending on wellness and community resources.</span></li>
-    <li><span class="k">K4</span><span class="note"><b>The distinction,</b> said to the person: we do not fit you around the services available. We build the right people and resources around you. Jay&rsquo;s exact sentence is on the institutional page.</span></li>
-    <li><span class="k">L1</span><span class="note"><b>One-line signpost</b> for universities, employers, healthcare organisations and communities, to the new institutional page. The institutional story lives there, not here.</span></li>
-    <li><span class="k">M1</span><span class="note"><b>Formerly, not formally.</b> The line reads exactly: Formerly known as Lighthouse in India.</span></li>
-    <li><span class="k dec">M2</span><span class="note"><b>Former name once,</b> discreetly in the footer. Removed from the hero, the poster card and the poster popup. To confirm: the poster popup still says older material carries our former name, without spelling it, for QR arrivals.</span></li>
-    <li><span class="k dec">M3</span><span class="note"><b>One organisational name.</b> HealthcareSMC-Geneura LLP from header to footer, including the helpline rows.</span></li>
-    <li><span class="k dec">M4</span><span class="note"><b>Footer lockup</b> exactly as written: Delivered in India by HealthcareSMC-Geneura LLP under license from Geneura AI&trade;, Inc.</span></li>
-    <li><span class="k">W1</span><span class="note"><b>Jay call, 8 Sept.</b> Anyone can benefit from being seen. Everyone matters. Was: Anyone can walk in.</span></li>
-    <li><span class="k">W2</span><span class="note"><b>Jay call, 8 Sept.</b> Come in and start your journey. Was: Come and pay us a visit.</span></li>
-    <li><span class="k">W3</span><span class="note"><b>Jay call, 8 Sept.</b> Engagement now names the Ambassador as well as the Listener.</span></li>
-    <li><span class="k">W4</span><span class="note"><b>Jay call, 8 Sept.</b> Escalation ends on a community resource, not a wellness or community resource.</span></li>
-    <li><span class="k">W5</span><span class="note"><b>Jay call, 8 Sept.</b> Follow-through is now the shared path and shared journey that help you become.</span></li>
-    <li><span class="k">W6</span><span class="note"><b>Jay call, 8 Sept.</b> We don&rsquo;t give you what we have. We give you what you need. Because there is no standard you and there should be no standard path.</span></li>
-    <li><span class="k">V1</span><span class="note"><b>Campfire circle</b> moved from the corner of the CARE section to sit behind You.</span></li>
-    <li><span class="k blk">O1</span><span class="note"><b>Waiting on Chris:</b> Director Ram&rsquo;s photo, welcome quote, and which title.</span></li>
-    <li><span class="k blk">O2</span><span class="note"><b>Waiting on the campus:</b> exact building, directions, opening hours.</span></li>
-    <li><span class="k blk">O3</span><span class="note"><b>Waiting:</b> GoDaddy access and written confirmation, so healthcaresmcindia.com and the existing QR codes forward here.</span></li>
-    <li><span class="k blk">O4</span><span class="note"><b>Before launch:</b> who answers +91 96346 76724, and what hours.</span></li>
-  </ol>
-  <button class="notes-toggle" type="button" id="notes-toggle">Hide the badges</button>
-  <p style="padding:8px 14px 12px;color:#6B7280;font-size:12px">This is a review copy. The live page is unchanged until these are approved.</p>
-</details>
-<script>
-(function(){
-  var on=true;try{on=localStorage.getItem('lythousNotesR2')!=='off'}catch(e){}
-  var b=document.getElementById('notes-toggle');
-  function sync(){document.body.classList.toggle('notes-on',on);b.textContent=on?'Hide the badges':'Show the badges';}
-  b.addEventListener('click',function(){on=!on;try{localStorage.setItem('lythousNotesR2',on?'on':'off')}catch(e){}sync();});
-  sync();
-})();
-</script>
 
 <script>
 (function(){
